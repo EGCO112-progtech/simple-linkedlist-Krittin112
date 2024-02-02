@@ -53,7 +53,7 @@ int main(int argc, const char * argv[]) {
     
    /*  Exercise IV change to while loop!! (you can use NULL to help)*/
        
-         while(tmp != NULL){ //while(tmp){ }
+         while(tmp != NULL){
             printf("%3d", tmp->value);
             tmp = tmp->next;
         }
@@ -67,7 +67,7 @@ int main(int argc, const char * argv[]) {
          head=(NodePtr) malloc(sizeof(struct node));
          tmp = head;
 
-    for(i=2;i<=11;i+=3){ // 2 5 8 11
+    for(i=2;i<=11;i+=3){
         tmp->value=i;
         if(i==11) tmp->next=NULL;
         else{
@@ -106,7 +106,7 @@ int main(int argc, const char * argv[]) {
          //use a loop to help*/
 
         
-        while(head!=NULL){ //while(head){ }
+        while(head!=NULL){
             tmp = head;
             head=head->next;
             printf("%5d",tmp->value);
