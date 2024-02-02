@@ -53,7 +53,7 @@ int main(int argc, const char * argv[]) {
     
    /*  Exercise IV change to while loop!! (you can use NULL to help)*/
        
-         while(tmp != NULL){
+         while(tmp){
             printf("%3d", tmp->value);
             tmp = tmp->next;
         }
@@ -106,7 +106,7 @@ int main(int argc, const char * argv[]) {
          //use a loop to help*/
 
         
-        while(head!=NULL){
+        while(head){
             tmp = head;
             head=head->next;
             printf("%5d",tmp->value);
