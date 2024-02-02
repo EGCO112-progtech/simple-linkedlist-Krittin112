@@ -59,7 +59,6 @@ int main(int argc, const char * argv[]) {
         }
     printf("\n");
 
-// 2 5 8 11
     /*  Exercise V Use malloc to create all nodes, instead of create a struct!!
          //use a loop to help*/
 
@@ -75,7 +74,6 @@ int main(int argc, const char * argv[]) {
             tmp=tmp->next;
         }
     }
-
          /*tmp->value=2;
          tmp->next=(NodePtr) malloc(sizeof(struct node)); //make new node
 
@@ -90,28 +88,16 @@ int main(int argc, const char * argv[]) {
          tmp=tmp->next;
          tmp->value=11;*/
 
-        ////Check////
-         /*
-         tmp = head;
-          while(tmp != NULL){
-            printf("%3d", tmp->value);
-            tmp = tmp->next;
-          }
-          printf("\n");
-        */
-
-
-
     /*  Exercise VI Free all node !!
          //use a loop to help*/
 
-        
-        while(head){
+        while(head != NULL){
             tmp = head;
             head=head->next;
             printf("%5d",tmp->value);
             free(tmp);
         }
+        printf("\n");
         /*
         head=head->next;
         free(tmp);
