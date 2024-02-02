@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
             tmp=tmp->next;
         }
     }
-         /*tmp->value=2;
+         tmp->value=2;
          tmp->next=(NodePtr) malloc(sizeof(struct node)); //make new node
 
          tmp=tmp->next;
@@ -86,7 +86,7 @@ int main(int argc, const char * argv[]) {
          tmp->next=(NodePtr) malloc(sizeof(struct node));
 
          tmp=tmp->next;
-         tmp->value=11;*/
+         tmp->value=11;
 
     /*  Exercise VI Free all node !!
          //use a loop to help*/
