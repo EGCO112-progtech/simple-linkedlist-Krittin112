@@ -112,7 +112,6 @@ int main(int argc, const char * argv[]) {
             printf("%5d",tmp->value);
             free(tmp);
         }
-        printf("\n");
         /*
         head=head->next;
         free(tmp);
